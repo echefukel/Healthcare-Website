@@ -25,7 +25,7 @@ margin: 0px;
 padding: 0px;
 color: #141c3A;
 font-family: 'Lato',sans-serif;
-background: whitesmoke;
+background: #fff;
 }
 section{
     min-height: 100vh;
@@ -45,13 +45,13 @@ section{
 .welcome p {
     line-height: 40px;
     font-size: 24px;
-    color: #656464;
+    color: #141c3A;
     font-weight: 300;
     font-style: italic;
 }
 .welcome h3{
     font-style: italic;
-    color: #656464;
+    color: #141c3A;
 }
 @media screen and (max-width: 992px) {
     .welcome {
