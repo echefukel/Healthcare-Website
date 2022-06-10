@@ -28,6 +28,7 @@ padding: 0px;
 color: #141c3A;
 font-family: 'Lato',sans-serif;
 background: #fff;
+box-sizing: border-box;
 }
 section{
     min-height: 100vh;
@@ -55,6 +56,43 @@ section{
     font-style: italic;
     color: #141c3A;
 }
+
+  /* About section */
+
+#about h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+#about p{
+    padding:10px;
+    font-size: 1.2rem;
+    text-align: center;
+
+
+}
+.location{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    margin: auto;
+    grid-gap: 25px;
+    width: 80%;
+    margin-bottom: 20px;
+}
+.country{
+    border-radius: 20px;
+    background: #76455d;
+    color: white;
+    text-align: center;
+    padding: 0 15%;
+    box-shadow: 0px 10px 20px 10px rgba(0,0,0,0.5);
+
+}
+.country p{
+    font-weight: lighter;
+}
+
 @media screen and (max-width: 992px) {
     .welcome {
         width: 90%;
@@ -70,7 +108,7 @@ section{
         margin-top: 50px;
     }
   }
-
+    
   /* sign up section */
 
 
@@ -141,6 +179,12 @@ section{
 @media only screen and (min-width: 600px){
     i{
         visibility: hidden;
+    }
+}
+/* media query for tabs */
+@media (min-width: 720px) and (max-width: 1024px) {
+    body{
+        font-size: 2rem;
     }
 }
 
