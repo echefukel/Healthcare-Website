@@ -137,3 +137,65 @@ section{
   #signup button:hover{
       filter:brightness(120%)
   }
+/* media query for big tabs and laps */
+@media only screen and (min-width: 600px){
+    i{
+        visibility: hidden;
+    }
+}
+
+  /* Media Query for phone devices */
+
+  @media only screen and (max-width: 600px){
+    nav{
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        top: 0;
+        left:0;
+        background: #733D57;
+        padding:  0;
+        
+        transform: translateX(-100%);
+        transition: all 1s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        
+    }
+    .ease-out{
+        transform: translateX(0);
+        transition: all 1s;
+    }
+    .ease-in{
+        transform: translateX(-100);
+    }
+
+        
+        
+        
+    
+    nav a {
+        color:white;
+        font-size: 16px;
+        width: 100%;
+        
+        
+    }
+    .fa-times{
+        font-size: 20px;
+        color: white;
+        position: fixed;
+        top:4px;
+        right: 4px;
+    }
+    .fa-bars{
+        font-size: 40px;
+        position: relative;
+        top: 10px;
+        left: 5px;
+        color:#733D57;
+    }
+
+  }
